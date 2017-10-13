@@ -14,12 +14,12 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./test_images/solidWhiteCurve.jpg "Input image"
+
 [image2]: ./test_images_output/solidWhiteCurve.jpg "Output image"
+
 ---
 
 ### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 The pipeline performs the following steps in the given order.
 
@@ -35,8 +35,8 @@ The pipeline performs the following steps in the given order.
 
 This is the function which had changes not covered in the course material. Given a list of lines output from HoughLinesP, I calculated the slope of each line and separated them into two lists of left_lines and right_lines. I then calculated the average of points in these lists and then used polyfit function to determine the ideal line equation. Using the slope, intercept from polyfit, I calculated the points to be extrapolated in region of interest.
 
-![input image goes here][image1]
-![output image goes here][image2]
+!["input image goes here"][image1]
+!["output image goes here"][image2]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
